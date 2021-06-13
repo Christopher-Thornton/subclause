@@ -14,10 +14,10 @@ Extract subordinate clauses in English text and related information:
    - Clause Subordinator
    - Level of Embededness 
 #### Complement
-   - Type (subject/object)
+   - Type (Subject/Object)
 #### Adverbial
    - Semantic Function of the Adjunct
-     - Time, Place, Condition, Reason, Concession, Purppose, Comparison, Manner, Results
+     - Time, Place, Condition, Reason, Concession, Purpose, Comparison, Manner, Results
 #### Relative
    - Restrictiveness
    - Head Noun
@@ -25,6 +25,7 @@ Extract subordinate clauses in English text and related information:
    - Head Noun Role in Main Clause
    - Head Noun Role in Subordinate Clause
 
+### Example Usage
 ```python
 import spacy
 nlp = spacy.load('en_core_web_sm')
@@ -63,6 +64,6 @@ for sent in doc.sents:
             print("\t\thead noun role in main clause:", sc.get_head_noun_role_in_main_clause())
             print("\t\thead noun role in subordinate clause:", sc.get_head_noun_role_in_sub_clause())
 ```
-### See also
+### See Also
 
 Xiaobin Chen et al., Automatic extraction of subordinate clauses and its application in second language acquisition research [[1]](https://www.researchgate.net/publication/344039283_Automatic_extraction_of_subordinate_clauses_and_its_application_in_second_language_acquisition_research)
