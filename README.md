@@ -4,21 +4,21 @@ Automatic subordinate clause extractor
 
 This is a non-identical Python port of the Java library [AutoSubclause](https://github.com/ctapweb/AutoSubClause).
 
-The NLP library SpaCy is used for document annotation.
-
+The NLP library *SpaCy* is used for document annotation.
 
 Extract subordinate clauses in English text and related information:
-##### General
+#### General
    - Clause Text
    - Clause Type
    - Clause Finiteness
    - Clause Subordinator
    - Level of Embededness 
-##### Complement
+#### Complement
    - Type (subject/object)
-##### Adverbial
-   - Semantic function of the Adjunct
-##### Relative
+#### Adverbial
+   - Semantic Function of the Adjunct
+     - Time, Place, Condition, Reason, Concession, Purppose, Comparison, Manner, Results
+#### Relative
    - Restrictiveness
    - Head Noun
    - Head Noun Animacy
